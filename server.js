@@ -1,2 +1,6 @@
-const http = require("./index");
-http.listen(8081, () => console.log("Server started"));
+const express=require('express');
+const app=express();
+app.get('/',(req,res)=>{
+res.send("Hi Its working")
+})
+app.listen(3000,()=>console.log("Web started"));
